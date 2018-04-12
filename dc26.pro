@@ -1,4 +1,4 @@
-update=Sat 31 Mar 2018 21:08:49 SAST
+update=Thu 12 Apr 2018 21:24:16 SAST
 version=1
 last_client=kicad
 [pcbnew]
@@ -59,3 +59,5 @@ LibName27=atmel
 LibName28=contrib
 LibName29=valves
 LibName30=/home/mike-encrypted2/mike/source/gsg-kicad-lib/gsg-symbols
+LibName31=switches
+LibName32=/home/mike/kicad/libraries/TSOP38238 38kHz IR receiver
