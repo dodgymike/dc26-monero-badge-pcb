@@ -44,7 +44,7 @@
   )
 
   (setup
-    (last_trace_width 0.5)
+    (last_trace_width 0.25)
     (user_trace_width 0.5)
     (user_trace_width 0.75)
     (user_trace_width 1)
@@ -20683,7 +20683,7 @@
   )
 
   (module Resistors_SMD:R_0603 (layer B.Cu) (tedit 58E0A804) (tstamp 5AD0AF4A)
-    (at 124.5 115.75 180)
+    (at 129 118.5 180)
     (descr "Resistor SMD 0603, reflow soldering, Vishay (see dcrcw.pdf)")
     (tags "resistor 0603")
     (path /5AD1B49D)
@@ -21772,6 +21772,7 @@
   (gr_arc (start 135.68156 77.002345) (end 123 94.7) (angle 215.1432058) (layer Edge.Cuts) (width 0.15) (tstamp 5AD3AC00))
   (gr_arc (start 175.1 132.9) (end 227.2 94.7) (angle 252.4981395) (layer Edge.Cuts) (width 0.15))
 
+  (segment (start 129.75 118.5) (end 129.75 122) (width 0.25) (layer B.Cu) (net 1))
   (segment (start 228.9 156.5) (end 228.9 154.85) (width 0.5) (layer B.Cu) (net 1))
   (segment (start 228.9 154.85) (end 229 154.75) (width 0.5) (layer B.Cu) (net 1))
   (via (at 229 154.75) (size 0.6) (drill 0.4) (layers F.Cu B.Cu) (net 1))
@@ -21820,8 +21821,6 @@
   (via (at 129.75 122) (size 0.6) (drill 0.4) (layers F.Cu B.Cu) (net 1))
   (segment (start 221.75 116) (end 220 116) (width 0.25) (layer B.Cu) (net 1) (status 10))
   (via (at 220 116) (size 0.6) (drill 0.4) (layers F.Cu B.Cu) (net 1))
-  (segment (start 125.25 115.75) (end 126.75 115.75) (width 0.25) (layer B.Cu) (net 1) (status 10))
-  (via (at 126.75 115.75) (size 0.6) (drill 0.4) (layers F.Cu B.Cu) (net 1))
   (segment (start 142 179.54) (end 145.96 179.54) (width 0.5) (layer B.Cu) (net 1) (status 30))
   (segment (start 145.96 179.54) (end 146 179.5) (width 0.5) (layer B.Cu) (net 1) (status 30))
   (via (at 168.35 190.7) (size 0.6) (drill 0.4) (layers F.Cu B.Cu) (net 1))
@@ -26755,9 +26754,10 @@
   (segment (start 211.48043 164.226086) (end 213.149995 164.226086) (width 0.25) (layer F.Cu) (net 1150) (status 30))
   (segment (start 137.350005 168.250001) (end 139.01957 168.250001) (width 0.25) (layer F.Cu) (net 1151) (status 30))
   (segment (start 137.350005 169.150001) (end 139.01957 169.150001) (width 0.25) (layer F.Cu) (net 1152) (status 30))
+  (segment (start 121.986691 115.75) (end 121.986691 118.5) (width 0.25) (layer B.Cu) (net 1155))
+  (segment (start 121.986691 118.5) (end 121.986691 119.933051) (width 0.25) (layer B.Cu) (net 1155))
+  (segment (start 128.25 118.5) (end 121.986691 118.5) (width 0.25) (layer B.Cu) (net 1155))
   (segment (start 121.986691 101.083766) (end 121.986691 115.75) (width 0.25) (layer B.Cu) (net 1155))
-  (segment (start 121.986691 115.75) (end 121.986691 119.933051) (width 0.25) (layer B.Cu) (net 1155))
-  (segment (start 123.75 115.75) (end 121.986691 115.75) (width 0.25) (layer B.Cu) (net 1155) (status 10))
   (segment (start 172.35 75.95) (end 147.120457 75.95) (width 0.25) (layer B.Cu) (net 1155) (status 10))
   (segment (start 147.120457 75.95) (end 121.986691 101.083766) (width 0.25) (layer B.Cu) (net 1155))
   (segment (start 119.95 122.25) (end 121.986691 120.213309) (width 0.5) (layer F.Cu) (net 1155) (status 10))
