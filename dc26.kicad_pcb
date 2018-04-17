@@ -21703,6 +21703,7 @@
     )
   )
 
+  (gr_line (start 156.24 69.83) (end 193.96 69.83) (layer Edge.Cuts) (width 0.15))
   (dimension 117.5 (width 0.3) (layer F.Mask)
     (gr_text "117.500 mm" (at 175.25 124.65) (layer F.Mask)
       (effects (font (size 1.5 1.5) (thickness 0.3)))
@@ -21736,7 +21737,6 @@
     (arrow2a (pts (xy 123 92.6) (xy 124.126504 93.186421)))
     (arrow2b (pts (xy 123 92.6) (xy 124.126504 92.013579)))
   )
-  (gr_line (start 156.24 69.83) (end 193.96 69.83) (layer Edge.Cuts) (width 0.15))
   (dimension 129.220031 (width 0.3) (layer F.Mask)
     (gr_text "129.220 mm" (at 174.904 37.075415 0.0399057369) (layer F.Mask)
       (effects (font (size 1.5 1.5) (thickness 0.3)))
