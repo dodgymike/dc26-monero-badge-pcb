@@ -1,4 +1,4 @@
-update=Tue 22 May 2018 15:05:59 SAST
+update=Sat 26 May 2018 15:00:33 SAST
 version=1
 last_client=kicad
 [pcbnew]
@@ -62,3 +62,4 @@ LibName30=/home/mike-encrypted2/mike/source/gsg-kicad-lib/gsg-symbols
 LibName31=switches
 LibName32=/home/mike/kicad/libraries/TSOP38238 38kHz IR receiver
 LibName33=stm32
+LibName34=sensors
