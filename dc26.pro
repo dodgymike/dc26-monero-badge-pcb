@@ -1,4 +1,4 @@
-update=Sat 26 May 2018 15:00:33 SAST
+update=Wed 30 May 2018 12:21:59 SAST
 version=1
 last_client=kicad
 [pcbnew]
@@ -27,7 +27,7 @@ NetIExt=net
 version=1
 [eeschema]
 version=1
-LibDir=
+LibDir=../../Downloads/Battery.pretty
 [eeschema/libraries]
 LibName1=power
 LibName2=device
@@ -63,3 +63,4 @@ LibName31=switches
 LibName32=/home/mike/kicad/libraries/TSOP38238 38kHz IR receiver
 LibName33=stm32
 LibName34=sensors
+LibName35=dc-dc

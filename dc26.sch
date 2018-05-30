@@ -33,12 +33,13 @@ LIBS:switches
 LIBS:TSOP38238 38kHz IR receiver
 LIBS:stm32
 LIBS:sensors
+LIBS:dc-dc
 LIBS:dc26-cache
 EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 1
+Sheet 1 3
 Title ""
 Date ""
 Rev ""
@@ -20916,50 +20917,6 @@ F 3 "" H 650 4600 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L R R?
-U 1 1 5B1A4D77
-P -12350 50
-F 0 "R?" V -12270 50  50  0000 C CNN
-F 1 "470R" V -12350 50  50  0000 C CNN
-F 2 "Resistors_SMD:R_0603" V -12420 50  50  0001 C CNN
-F 3 "" H -12350 50  50  0001 C CNN
-	1    -12350 50  
-	0    1    1    0   
-$EndComp
-$Comp
-L GND #PWR?
-U 1 1 5B1A4D7D
-P -13150 250
-F 0 "#PWR?" H -13150 0   50  0001 C CNN
-F 1 "GND" H -13150 100 50  0000 C CNN
-F 2 "" H -13150 250 50  0001 C CNN
-F 3 "" H -13150 250 50  0001 C CNN
-	1    -13150 250 
-	1    0    0    -1  
-$EndComp
-$Comp
-L LED PWR_BATT
-U 1 1 5B1A4D83
-P -12800 50
-F 0 "PWR_BATT" H -12800 150 50  0000 C CNN
-F 1 "LED" H -12800 -50 50  0000 C CNN
-F 2 "LEDs:LED_0603" H -12800 50  50  0001 C CNN
-F 3 "" H -12800 50  50  0001 C CNN
-	1    -12800 50  
-	-1   0    0    1   
-$EndComp
-$Comp
-L +BATT #PWR?
-U 1 1 5B1AFC40
-P -12100 300
-F 0 "#PWR?" H -12100 150 50  0001 C CNN
-F 1 "+BATT" H -12100 440 50  0000 C CNN
-F 2 "" H -12100 300 50  0001 C CNN
-F 3 "" H -12100 300 50  0001 C CNN
-	1    -12100 300 
-	-1   0    0    1   
-$EndComp
-$Comp
 L TEST TP-PGM-SWDCLK
 U 1 1 5B1B5199
 P -2650 9200
@@ -26070,7 +26027,7 @@ Wire Wire Line
 Wire Wire Line
 	1900 -5400 2700 -5400
 Wire Wire Line
-	2700 -5500 1900 -5500
+	1900 -5500 2700 -5500
 Wire Wire Line
 	1900 -5700 1900 -5900
 Wire Wire Line
@@ -26259,7 +26216,7 @@ Wire Wire Line
 	-7600 1700 -8900 1700
 Connection ~ -7600 600 
 Wire Wire Line
-	-8900 -850 -7950 -850
+	-7950 -850 -8900 -850
 Wire Wire Line
 	-7950 -1400 -7950 1350
 Wire Wire Line
@@ -26576,7 +26533,7 @@ Wire Wire Line
 Wire Wire Line
 	-9450 3300 -9450 3450
 Wire Wire Line
-	-9850 2900 -10050 2900
+	-10050 2900 -9850 2900
 Wire Wire Line
 	-9050 2900 -8850 2900
 Wire Wire Line
@@ -26605,9 +26562,9 @@ Wire Wire Line
 Wire Wire Line
 	-11750 4000 -11750 3950
 Wire Wire Line
-	-11300 4750 -11750 4750
+	-11750 4750 -11300 4750
 Wire Wire Line
-	-11750 4750 -11750 4200
+	-11750 4200 -11750 4750
 Wire Wire Line
 	-11850 4350 -11750 4350
 Connection ~ -11750 4350
@@ -26627,7 +26584,7 @@ Connection ~ -12250 5250
 Wire Wire Line
 	-12400 4950 -12450 4950
 Wire Wire Line
-	-11300 4950 -12200 4950
+	-12200 4950 -11300 4950
 Wire Wire Line
 	-11850 4750 -11850 4950
 Connection ~ -11850 4950
@@ -26716,16 +26673,6 @@ Connection ~ 1000 5250
 Wire Wire Line
 	650  4600 650  4750
 Wire Wire Line
-	-12650 50   -12500 50  
-Wire Wire Line
-	-12100 50   -12100 300 
-Wire Wire Line
-	-12200 50   -12100 50  
-Wire Wire Line
-	-13150 50   -13150 250 
-Wire Wire Line
-	-12950 50   -13150 50  
-Wire Wire Line
 	-1350 9050 -1350 9200
 Wire Wire Line
 	-2700 6050 -1900 6050
@@ -26763,7 +26710,7 @@ Connection ~ -11650 4950
 Wire Wire Line
 	-7200 2050 -7200 4350
 Wire Wire Line
-	-7100 4350 -7100 2050
+	-7100 2050 -7100 4350
 Wire Wire Line
 	-7200 2050 -6800 2050
 Wire Wire Line
@@ -26809,4 +26756,20 @@ Connection ~ -6200 3450
 Wire Wire Line
 	-6900 8600 -6900 8350
 Connection ~ -7000 8600
+Text GLabel -2000 4750 2    60   Input ~ 0
+BATT-BUCK-ENABLE
+Wire Wire Line
+	-2700 4750 -2000 4750
+$Sheet
+S -21100 -2000 3550 2300
+U 5B2B9E1E
+F0 "batteries" 60
+F1 "batteries.sch" 60
+$EndSheet
+$Sheet
+S -21100 550  3600 2400
+U 5B2CE45B
+F0 "Power Converter" 60
+F1 "power-converter.sch" 60
+$EndSheet
 $EndSCHEMATC
