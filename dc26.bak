@@ -50,17 +50,6 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L 74LS165 B_SHIFT_1
-U 1 1 5ACD7519
-P -1800 -5700
-F 0 "B_SHIFT_1" H -1650 -5750 50  0000 C CNN
-F 1 "74LS165" H -1650 -5950 50  0000 C CNN
-F 2 "Housings_SSOP:TSSOP-16_4.4x5mm_Pitch0.65mm" H -1800 -5700 50  0001 C CNN
-F 3 "" H -1800 -5700 50  0001 C CNN
-	1    -1800 -5700
-	1    0    0    -1  
-$EndComp
-$Comp
 L 74LS165 B_SHIFT_2
 U 1 1 5ACD8894
 P -1800 -4150
@@ -294,13 +283,13 @@ $EndComp
 $Comp
 L GND #PWR01
 U 1 1 5AD27FBE
-P -3800 -6700
-F 0 "#PWR01" H -3800 -6950 50  0001 C CNN
-F 1 "GND" H -3800 -6850 50  0000 C CNN
-F 2 "" H -3800 -6700 50  0001 C CNN
-F 3 "" H -3800 -6700 50  0001 C CNN
-	1    -3800 -6700
-	-1   0    0    1   
+P -3450 -6450
+F 0 "#PWR01" H -3450 -6700 50  0001 C CNN
+F 1 "GND" H -3450 -6600 50  0000 C CNN
+F 2 "" H -3450 -6450 50  0001 C CNN
+F 3 "" H -3450 -6450 50  0001 C CNN
+	1    -3450 -6450
+	1    0    0    -1  
 $EndComp
 $Comp
 L GND #PWR02
@@ -1062,8 +1051,6 @@ Wire Wire Line
 	-4300 -3900 -4300 -3750
 Connection ~ -4300 -3750
 Wire Wire Line
-	-3800 -6700 -3800 -6550
-Wire Wire Line
 	-4000 -6550 -4000 -3900
 Connection ~ -4000 -6250
 Connection ~ -4000 -6000
@@ -1611,8 +1598,73 @@ Text GLabel -1550 6250 2    60   Input ~ 0
 LED-POWER-ENABLE
 Wire Wire Line
 	-2700 6250 -1550 6250
-Connection ~ -5650 -6450
-Connection ~ -3800 -6550
 Wire Wire Line
 	-4000 -6550 -3450 -6550
+Wire Wire Line
+	-3450 -6550 -3450 -6450
+$Comp
+L GND #PWR?
+U 1 1 5B188D2F
+P -1100 -5650
+F 0 "#PWR?" H -1100 -5900 50  0001 C CNN
+F 1 "GND" H -1100 -5800 50  0000 C CNN
+F 2 "" H -1100 -5650 50  0001 C CNN
+F 3 "" H -1100 -5650 50  0001 C CNN
+	1    -1100 -5650
+	1    0    0    -1  
+$EndComp
+$Comp
+L 74LS165 B_SHIFT_1
+U 1 1 5ACD7519
+P -1800 -5700
+F 0 "B_SHIFT_1" H -1650 -5750 50  0000 C CNN
+F 1 "74LS165" H -1650 -5950 50  0000 C CNN
+F 2 "Housings_SSOP:TSSOP-16_4.4x5mm_Pitch0.65mm" H -1800 -5700 50  0001 C CNN
+F 3 "" H -1800 -5700 50  0001 C CNN
+	1    -1800 -5700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	-1300 -5700 -1100 -5700
+Wire Wire Line
+	-1100 -5700 -1100 -5650
+$Comp
+L +5V #PWR?
+U 1 1 5B1896AE
+P -1100 -5850
+F 0 "#PWR?" H -1100 -6000 50  0001 C CNN
+F 1 "+5V" H -1100 -5710 50  0000 C CNN
+F 2 "" H -1100 -5850 50  0001 C CNN
+F 3 "" H -1100 -5850 50  0001 C CNN
+	1    -1100 -5850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	-1300 -5850 -1100 -5850
+$Comp
+L +5V #PWR?
+U 1 1 5B189C3C
+P -1150 -4300
+F 0 "#PWR?" H -1150 -4450 50  0001 C CNN
+F 1 "+5V" H -1150 -4160 50  0000 C CNN
+F 2 "" H -1150 -4300 50  0001 C CNN
+F 3 "" H -1150 -4300 50  0001 C CNN
+	1    -1150 -4300
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 5B189D37
+P -1150 -4150
+F 0 "#PWR?" H -1150 -4400 50  0001 C CNN
+F 1 "GND" H -1150 -4300 50  0000 C CNN
+F 2 "" H -1150 -4150 50  0001 C CNN
+F 3 "" H -1150 -4150 50  0001 C CNN
+	1    -1150 -4150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	-1300 -4300 -1150 -4300
+Wire Wire Line
+	-1150 -4150 -1300 -4150
 $EndSCHEMATC
