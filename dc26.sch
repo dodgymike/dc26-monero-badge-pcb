@@ -1064,7 +1064,7 @@ Connection ~ -4300 -3750
 Wire Wire Line
 	-3800 -6700 -3800 -6550
 Wire Wire Line
-	-3800 -6550 -4000 -6550
+	-4000 -6550 -3450 -6550
 Wire Wire Line
 	-4000 -6550 -4000 -3900
 Connection ~ -4000 -6250
@@ -1613,4 +1613,32 @@ Text GLabel -1550 6250 2    60   Input ~ 0
 LED-POWER-ENABLE
 Wire Wire Line
 	-2700 6250 -1550 6250
+$Comp
+L PWR_FLAG #FLG?
+U 1 1 5B18689B
+P -6050 -6500
+F 0 "#FLG?" H -6050 -6425 50  0001 C CNN
+F 1 "PWR_FLAG" H -6050 -6350 50  0000 C CNN
+F 2 "" H -6050 -6500 50  0001 C CNN
+F 3 "" H -6050 -6500 50  0001 C CNN
+	1    -6050 -6500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	-6050 -6450 -5650 -6450
+Connection ~ -5650 -6450
+Wire Wire Line
+	-6050 -6450 -6050 -6500
+$Comp
+L PWR_FLAG #FLG?
+U 1 1 5B18707E
+P -3450 -6550
+F 0 "#FLG?" H -3450 -6475 50  0001 C CNN
+F 1 "PWR_FLAG" H -3450 -6400 50  0000 C CNN
+F 2 "" H -3450 -6550 50  0001 C CNN
+F 3 "" H -3450 -6550 50  0001 C CNN
+	1    -3450 -6550
+	1    0    0    -1  
+$EndComp
+Connection ~ -3800 -6550
 $EndSCHEMATC
