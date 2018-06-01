@@ -1,0 +1,278 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:gsg-symbols
+LIBS:switches
+LIBS:TSOP38238 38kHz IR receiver
+LIBS:stm32
+LIBS:sensors
+LIBS:dc-dc
+LIBS:device
+LIBS:dc26-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 7 7
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L TSOP38238 IR_RX_F1
+U 1 1 5B14511A
+P 4350 3400
+F 0 "IR_RX_F1" H 4300 3850 60  0000 C CNN
+F 1 "TSOP38238" H 4400 2900 60  0000 C CNN
+F 2 "custom-footprints:IR_Receiver" H 4350 3400 60  0001 C CNN
+F 3 "" H 4350 3400 60  0001 C CNN
+	1    4350 3400
+	0    1    1    0   
+$EndComp
+$Comp
+L TSOP38238 IR_RX_L1
+U 1 1 5B145121
+P 3250 3400
+F 0 "IR_RX_L1" H 3200 3850 60  0000 C CNN
+F 1 "TSOP38238" H 3300 2900 60  0000 C CNN
+F 2 "custom-footprints:IR_Receiver" H 3250 3400 60  0001 C CNN
+F 3 "" H 3250 3400 60  0001 C CNN
+	1    3250 3400
+	0    1    1    0   
+$EndComp
+$Comp
+L TSOP38238 IR_RX_R1
+U 1 1 5B145128
+P 2150 3400
+F 0 "IR_RX_R1" H 2100 3850 60  0000 C CNN
+F 1 "TSOP38238" H 2200 2900 60  0000 C CNN
+F 2 "custom-footprints:IR_Receiver" H 2150 3400 60  0001 C CNN
+F 3 "" H 2150 3400 60  0001 C CNN
+	1    2150 3400
+	0    1    1    0   
+$EndComp
+$Comp
+L GND #PWR1228
+U 1 1 5B14512F
+P 4900 4750
+F 0 "#PWR1228" H 4900 4500 50  0001 C CNN
+F 1 "GND" H 4900 4600 50  0000 C CNN
+F 2 "" H 4900 4750 50  0001 C CNN
+F 3 "" H 4900 4750 50  0001 C CNN
+	1    4900 4750
+	1    0    0    -1  
+$EndComp
+$Comp
+L IR204A IR_TX_F1
+U 1 1 5B145135
+P 7450 4350
+F 0 "IR_TX_F1" H 7470 4420 50  0000 L CNN
+F 1 "IR204A" H 7410 4240 50  0000 C CNN
+F 2 "LEDs:LED_0603" H 7450 4525 50  0001 C CNN
+F 3 "" H 7400 4350 50  0000 C CNN
+	1    7450 4350
+	1    0    0    -1  
+$EndComp
+$Comp
+L IR204A IR_RX_L2
+U 1 1 5B14513C
+P 7500 3900
+F 0 "IR_RX_L2" H 7520 3970 50  0000 L CNN
+F 1 "IR204A" H 7460 3790 50  0000 C CNN
+F 2 "LEDs:LED_0603" H 7500 4075 50  0001 C CNN
+F 3 "" H 7450 3900 50  0000 C CNN
+	1    7500 3900
+	1    0    0    -1  
+$EndComp
+$Comp
+L IR204A IR_RX_R2
+U 1 1 5B145143
+P 7450 4850
+F 0 "IR_RX_R2" H 7470 4920 50  0000 L CNN
+F 1 "IR204A" H 7410 4740 50  0000 C CNN
+F 2 "LEDs:LED_0603" H 7450 5025 50  0001 C CNN
+F 3 "" H 7400 4850 50  0000 C CNN
+	1    7450 4850
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R1
+U 1 1 5B14514A
+P 7850 4350
+F 0 "R1" V 7930 4350 50  0000 C CNN
+F 1 "100R" V 7850 4350 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603" V 7780 4350 50  0001 C CNN
+F 3 "" H 7850 4350 50  0001 C CNN
+	1    7850 4350
+	0    1    1    0   
+$EndComp
+$Comp
+L R R3
+U 1 1 5B145151
+P 7900 3900
+F 0 "R3" V 7980 3900 50  0000 C CNN
+F 1 "100R" V 7900 3900 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603" V 7830 3900 50  0001 C CNN
+F 3 "" H 7900 3900 50  0001 C CNN
+	1    7900 3900
+	0    1    1    0   
+$EndComp
+$Comp
+L R R2
+U 1 1 5B145158
+P 7850 4850
+F 0 "R2" V 7930 4850 50  0000 C CNN
+F 1 "100R" V 7850 4850 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603" V 7780 4850 50  0001 C CNN
+F 3 "" H 7850 4850 50  0001 C CNN
+	1    7850 4850
+	0    1    1    0   
+$EndComp
+$Comp
+L GND #PWR1230
+U 1 1 5B14515F
+P 8000 4450
+F 0 "#PWR1230" H 8000 4200 50  0001 C CNN
+F 1 "GND" H 8000 4300 50  0000 C CNN
+F 2 "" H 8000 4450 50  0001 C CNN
+F 3 "" H 8000 4450 50  0001 C CNN
+	1    8000 4450
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR1232
+U 1 1 5B145165
+P 8050 4000
+F 0 "#PWR1232" H 8050 3750 50  0001 C CNN
+F 1 "GND" H 8050 3850 50  0000 C CNN
+F 2 "" H 8050 4000 50  0001 C CNN
+F 3 "" H 8050 4000 50  0001 C CNN
+	1    8050 4000
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR1231
+U 1 1 5B14516B
+P 8000 4950
+F 0 "#PWR1231" H 8000 4700 50  0001 C CNN
+F 1 "GND" H 8000 4800 50  0000 C CNN
+F 2 "" H 8000 4950 50  0001 C CNN
+F 3 "" H 8000 4950 50  0001 C CNN
+	1    8000 4950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4000 3800 4000 5100
+Wire Wire Line
+	1800 5100 4900 5100
+Wire Wire Line
+	2900 5100 2900 3800
+Connection ~ 4000 5100
+Wire Wire Line
+	1800 5100 1800 3800
+Connection ~ 2900 5100
+Wire Wire Line
+	4350 4750 4350 3800
+Wire Wire Line
+	2150 4750 4900 4750
+Wire Wire Line
+	3250 4750 3250 3800
+Connection ~ 4350 4750
+Wire Wire Line
+	2150 4750 2150 3800
+Connection ~ 3250 4750
+Wire Wire Line
+	8000 4350 8000 4450
+Wire Wire Line
+	8050 3900 8050 4000
+Wire Wire Line
+	8000 4850 8000 4950
+Wire Wire Line
+	5050 3800 4700 3800
+Wire Wire Line
+	5050 2900 5050 3800
+Wire Wire Line
+	3600 3800 3600 4000
+Wire Wire Line
+	2500 3800 2500 4000
+Wire Wire Line
+	7550 4350 7700 4350
+Wire Wire Line
+	7600 3900 7750 3900
+Wire Wire Line
+	7550 4850 7700 4850
+Wire Wire Line
+	5850 2900 5050 2900
+Wire Wire Line
+	3600 4000 5350 4000
+Wire Wire Line
+	5350 4000 5350 3100
+Wire Wire Line
+	5350 3100 5850 3100
+Wire Wire Line
+	2500 4000 2700 4000
+Wire Wire Line
+	2700 4000 2700 2700
+Wire Wire Line
+	2700 2700 5850 2700
+$Comp
+L +3.3V #PWR1229
+U 1 1 5B14519E
+P 4900 5100
+F 0 "#PWR1229" H 4900 4950 50  0001 C CNN
+F 1 "+3.3V" H 4900 5240 50  0000 C CNN
+F 2 "" H 4900 5100 50  0001 C CNN
+F 3 "" H 4900 5100 50  0001 C CNN
+	1    4900 5100
+	1    0    0    -1  
+$EndComp
+Text GLabel 5850 2700 2    60   Input ~ 0
+IR-RX-R
+Text GLabel 5850 2900 2    60   Input ~ 0
+IR-RX-L
+Text GLabel 5850 3100 2    60   Input ~ 0
+IR-RX-F
+Text GLabel 7150 3900 0    60   Input ~ 0
+IR-TX-L
+Text GLabel 7150 4350 0    60   Input ~ 0
+IR-TX-F
+Text GLabel 7150 4850 0    60   Input ~ 0
+IR-TX-R
+Wire Wire Line
+	7150 3900 7300 3900
+Wire Wire Line
+	7150 4350 7250 4350
+Wire Wire Line
+	7150 4850 7250 4850
+$EndSCHEMATC
