@@ -960,17 +960,6 @@ F 3 "" H -11400 8300 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L TEST PC9
-U 1 1 5B18EB92
-P -11550 8450
-F 0 "PC9" H -11550 8750 50  0000 C BNN
-F 1 "PC9" H -11550 8700 50  0000 C CNN
-F 2 "Measurement_Points:Measurement_Point_Round-SMD-Pad_Small" H -11550 8450 50  0001 C CNN
-F 3 "" H -11550 8450 50  0001 C CNN
-	1    -11550 8450
-	-1   0    0    1   
-$EndComp
-$Comp
 L TEST IRTXF1
 U 1 1 5B18EC54
 P -11700 8600
@@ -990,50 +979,6 @@ F 1 "IRRXF" H -11850 9000 50  0000 C CNN
 F 2 "Measurement_Points:Measurement_Point_Round-SMD-Pad_Small" H -11850 8750 50  0001 C CNN
 F 3 "" H -11850 8750 50  0001 C CNN
 	1    -11850 8750
-	-1   0    0    1   
-$EndComp
-$Comp
-L TEST PC12
-U 1 1 5B18EDE3
-P -12000 8900
-F 0 "PC12" H -12000 9200 50  0000 C BNN
-F 1 "PC12" H -12000 9150 50  0000 C CNN
-F 2 "Measurement_Points:Measurement_Point_Round-SMD-Pad_Small" H -12000 8900 50  0001 C CNN
-F 3 "" H -12000 8900 50  0001 C CNN
-	1    -12000 8900
-	-1   0    0    1   
-$EndComp
-$Comp
-L TEST PC13
-U 1 1 5B18EEAC
-P -12150 9050
-F 0 "PC13" H -12150 9350 50  0000 C BNN
-F 1 "PC13" H -12150 9300 50  0000 C CNN
-F 2 "Measurement_Points:Measurement_Point_Round-SMD-Pad_Small" H -12150 9050 50  0001 C CNN
-F 3 "" H -12150 9050 50  0001 C CNN
-	1    -12150 9050
-	-1   0    0    1   
-$EndComp
-$Comp
-L TEST PC14
-U 1 1 5B18EF78
-P -12300 9200
-F 0 "PC14" H -12300 9500 50  0000 C BNN
-F 1 "PC14" H -12300 9450 50  0000 C CNN
-F 2 "Measurement_Points:Measurement_Point_Round-SMD-Pad_Small" H -12300 9200 50  0001 C CNN
-F 3 "" H -12300 9200 50  0001 C CNN
-	1    -12300 9200
-	-1   0    0    1   
-$EndComp
-$Comp
-L TEST PC15
-U 1 1 5B18F04B
-P -12450 9350
-F 0 "PC15" H -12450 9650 50  0000 C BNN
-F 1 "PC15" H -12450 9600 50  0000 C CNN
-F 2 "Measurement_Points:Measurement_Point_Round-SMD-Pad_Small" H -12450 9350 50  0001 C CNN
-F 3 "" H -12450 9350 50  0001 C CNN
-	1    -12450 9350
 	-1   0    0    1   
 $EndComp
 Wire Wire Line
@@ -1065,33 +1010,33 @@ Wire Wire Line
 Wire Wire Line
 	-2500 -5700 -3500 -5700
 Wire Wire Line
-	-3500 -4900 -3500 -5700
+	-3500 -5700 -3500 -4900
 Wire Wire Line
-	-4700 -4900 -3500 -4900
+	-3500 -4900 -4700 -4900
 Wire Wire Line
 	-2500 -5600 -3400 -5600
 Wire Wire Line
-	-3400 -4650 -3400 -5600
+	-3400 -5600 -3400 -4650
 Wire Wire Line
-	-4700 -4650 -3400 -4650
+	-3400 -4650 -4700 -4650
 Wire Wire Line
 	-2500 -5500 -3350 -5500
 Wire Wire Line
-	-3350 -4400 -3350 -5500
+	-3350 -5500 -3350 -4400
 Wire Wire Line
-	-4700 -4400 -3350 -4400
+	-3350 -4400 -4700 -4400
 Wire Wire Line
 	-2500 -4650 -3300 -4650
 Wire Wire Line
-	-3300 -4000 -3300 -4650
+	-3300 -4650 -3300 -4000
 Wire Wire Line
-	-4700 -4000 -3300 -4000
+	-3300 -4000 -4700 -4000
 Wire Wire Line
 	-2500 -4550 -3250 -4550
 Wire Wire Line
-	-3250 -3750 -3250 -4550
+	-3250 -4550 -3250 -3750
 Wire Wire Line
-	-4700 -3750 -3250 -3750
+	-3250 -3750 -4700 -3750
 Wire Wire Line
 	-5650 -6600 -5650 -3750
 Connection ~ -5650 -6350
@@ -1224,11 +1169,11 @@ Wire Wire Line
 Wire Wire Line
 	-2100 6950 -2100 4050
 Wire Wire Line
-	-3050 4050 -2100 4050
+	-2100 4050 -3050 4050
 Wire Wire Line
-	-3050 -2850 -3050 4050
+	-3050 4050 -3050 -2850
 Wire Wire Line
-	-2900 -2850 -3050 -2850
+	-3050 -2850 -2900 -2850
 Wire Wire Line
 	-2700 7750 850  7750
 Wire Wire Line
@@ -1431,15 +1376,15 @@ Wire Wire Line
 Wire Wire Line
 	-11300 5950 -12250 5950
 Wire Wire Line
-	-12250 5850 -12250 5950
+	-12250 5950 -12250 5850
 Wire Wire Line
-	-13650 5850 -12250 5850
+	-12250 5850 -13650 5850
 Wire Wire Line
 	-11300 6050 -12250 6050
 Wire Wire Line
-	-12250 6150 -12250 6050
+	-12250 6050 -12250 6150
 Wire Wire Line
-	-13650 6150 -12250 6150
+	-12250 6150 -13650 6150
 Wire Wire Line
 	-13400 6250 -13400 5850
 Connection ~ -13400 5850
@@ -1515,26 +1460,72 @@ Wire Wire Line
 	-11750 6400 -11750 7150
 Connection ~ -11750 7150
 Wire Wire Line
-	-12450 9350 -12450 7950
-Wire Wire Line
-	-12300 9200 -12300 7850
-Connection ~ -12300 7850
-Wire Wire Line
-	-12150 9050 -12150 7750
-Connection ~ -12150 7750
-Wire Wire Line
-	-12000 8900 -12000 7650
-Connection ~ -12000 7650
-Wire Wire Line
 	-11850 8750 -11850 7550
 Connection ~ -11850 7550
 Wire Wire Line
 	-11700 8600 -11700 7450
-Connection ~ -11700 7450
-Wire Wire Line
-	-11550 8450 -11550 7350
-Connection ~ -11550 7350
 Wire Wire Line
 	-11400 8300 -11400 7250
 Connection ~ -11400 7250
+Connection ~ -11700 7450
+$Comp
+L Voltage_Divider VBAT-DIV1
+U 1 1 5B15AEF3
+P -250 6550
+F 0 "VBAT-DIV1" V -425 6550 50  0000 C CNN
+F 1 "5k-10k" V -350 6550 50  0000 C CNN
+F 2 "TO_SOT_Packages_SMD:SOT-23" V 225 6550 50  0001 C CNN
+F 3 "" H -50 6550 50  0001 C CNN
+	1    -250 6550
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	-2700 6550 -400 6550
+$Comp
+L GND #PWR?
+U 1 1 5B15B26B
+P -250 6800
+F 0 "#PWR?" H -250 6550 50  0001 C CNN
+F 1 "GND" H -250 6650 50  0000 C CNN
+F 2 "" H -250 6800 50  0001 C CNN
+F 3 "" H -250 6800 50  0001 C CNN
+	1    -250 6800
+	1    0    0    -1  
+$EndComp
+$Comp
+L +BATT #PWR?
+U 1 1 5B15B508
+P -250 6300
+F 0 "#PWR?" H -250 6150 50  0001 C CNN
+F 1 "+BATT" H -250 6440 50  0000 C CNN
+F 2 "" H -250 6300 50  0001 C CNN
+F 3 "" H -250 6300 50  0001 C CNN
+	1    -250 6300
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 5B15BD01
+P -900 6800
+F 0 "#PWR?" H -900 6550 50  0001 C CNN
+F 1 "GND" H -900 6650 50  0000 C CNN
+F 2 "" H -900 6800 50  0001 C CNN
+F 3 "" H -900 6800 50  0001 C CNN
+	1    -900 6800
+	1    0    0    -1  
+$EndComp
+$Comp
+L C_Small C?
+U 1 1 5B15C038
+P -900 6700
+F 0 "C?" H -890 6770 50  0000 L CNN
+F 1 "0.1uF" H -890 6620 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0603" H -900 6700 50  0001 C CNN
+F 3 "" H -900 6700 50  0001 C CNN
+	1    -900 6700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	-900 6550 -900 6600
+Connection ~ -900 6550
 $EndSCHEMATC
