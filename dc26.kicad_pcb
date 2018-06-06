@@ -52,7 +52,7 @@
     (user_trace_width 1.5)
     (user_trace_width 1.75)
     (user_trace_width 2)
-    (trace_clearance 0.2)
+    (trace_clearance 0.19)
     (zone_clearance 0.508)
     (zone_45_only no)
     (trace_min 0.2)
@@ -1333,7 +1333,7 @@
   (net 1226 "Net-(F405_USB1-Pad6)")
 
   (net_class Default "This is the default net class."
-    (clearance 0.2)
+    (clearance 0.19)
     (trace_width 0.25)
     (via_dia 0.6)
     (via_drill 0.4)
@@ -2568,7 +2568,7 @@
   )
 
   (net_class "0.5 mm" ""
-    (clearance 0.2)
+    (clearance 0.19)
     (trace_width 0.5)
     (via_dia 0.6)
     (via_drill 0.4)
