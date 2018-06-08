@@ -3,7 +3,7 @@
   (general
     (links 2588)
     (no_connects 0)
-    (area 92.37 25.535 257.820001 208.180001)
+    (area 110.421207 55.104999 239.778793 197.578793)
     (thickness 1.6)
     (drawings 63)
     (tracks 8289)
@@ -101,7 +101,7 @@
       (mirror false)
       (drillshape 0)
       (scaleselection 1)
-      (outputdirectory gerber-prod-truncated-track-fix/))
+      (outputdirectory gerber-prod-20180608-004/))
   )
 
   (net 0 "")
