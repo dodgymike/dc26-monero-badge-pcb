@@ -1,7 +1,0 @@
-Plot file '/home/mike/source/monero-badge-2018/dc26-challenge/gerber/dc26-challenge-F.Cu.gtl' created.
-Plot file '/home/mike/source/monero-badge-2018/dc26-challenge/gerber/dc26-challenge-B.Cu.gbl' created.
-Plot file '/home/mike/source/monero-badge-2018/dc26-challenge/gerber/dc26-challenge-B.SilkS.gbo' created.
-Plot file '/home/mike/source/monero-badge-2018/dc26-challenge/gerber/dc26-challenge-F.SilkS.gto' created.
-Plot file '/home/mike/source/monero-badge-2018/dc26-challenge/gerber/dc26-challenge-B.Mask.gbs' created.
-Plot file '/home/mike/source/monero-badge-2018/dc26-challenge/gerber/dc26-challenge-F.Mask.gts' created.
-Plot file '/home/mike/source/monero-badge-2018/dc26-challenge/gerber/dc26-challenge-Edge.Cuts.gm1' created.
