@@ -1,5 +1,5 @@
 Drill report for /home/mike/source/monero-badge-2018/dc26-challenge/dc26-challenge.kicad_pcb
-Created on Mon 02 Jul 2018 22:47:15 SAST
+Created on Tue 03 Jul 2018 00:16:21 SAST
 
 Copper Layer Stackup:
     =============================================================
@@ -10,13 +10,13 @@ Copper Layer Stackup:
 Drill file 'dc26-challenge.drl' contains
     plated through holes:
     =============================================================
-    T1  0.40mm  0.016"  (224 holes)
 
-    Total plated holes count 224
+    Total plated holes count 0
 
 
 Not plated through holes are merged with plated holes
     unplated through holes:
     =============================================================
+    T1  0.50mm  0.020"  (192 holes)
 
-    Total unplated holes count 0
+    Total unplated holes count 192
