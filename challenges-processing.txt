@@ -1,0 +1,8 @@
+key = "crypto means crypto means crypto means"
+plaintext=bob is the monkey" # <<=== fill in something here
+
+ciphertext=[]; plaintext.split(").each_with_index {|chr,index| puts "index (#{index}) chr (#{chr}) ord (#{chr.ord}) key chr (#{key[index % key.length]}) xor (#{(chr.ord ^ key[index % key.length].ord).ord})"; ciphertext << (chr.ord ^ key[index % key.length].ord).ord.to_s(16) }; ciphertext
+
+deciphertext=""; ciphertext.each_with_index {|chr,index| deciphertext += (chr ^ key[index % key.length].ord).chr }; deciphertext
+
+
